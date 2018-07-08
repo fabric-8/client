@@ -26,3 +26,31 @@
     color: #9a99a5;
   }
 }
+
+.buttonBar {
+  align-self: stretch;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+
+  button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1rem;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    margin: 0.5rem;
+    color: $primary-text-color;
+
+    &:focus,
+    &:hover {
+      color: lighten($primary-text-color, 20%);
+    }
+
+    &:active {
+      color: darken($primary-text-color, 20%);
+    }
+  }
+}

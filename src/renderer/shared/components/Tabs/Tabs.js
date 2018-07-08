@@ -24,7 +24,6 @@ export default class Tabs extends React.Component {
         <ul className={styles.header}>
           {map(this.props.tabs, this.renderHeader)}
         </ul>
-
         {this.renderSelectedTab()}
       </div>
     );

@@ -8,6 +8,7 @@ import Icon from 'shared/components/Icon';
 import Tab from '../Tab';
 import tabShape from '../../shapes/tabShape';
 import styles from './Tabs.scss';
+import ButtonBar from "../../../root/components/App/ButtonBar/ButtonBar";
 
 export default class Tabs extends React.Component {
   static propTypes = {
@@ -39,6 +40,7 @@ export default class Tabs extends React.Component {
       <div className={classNames(styles.tabs, this.props.className)}>
         {map(this.props.tabs, this.renderTab)}
         <Icon className={styles.newTab} name="add" onClick={this.props.onOpen} />
+        <ButtonBar className={styles.buttonBar} />
       </div>
     );
   }
